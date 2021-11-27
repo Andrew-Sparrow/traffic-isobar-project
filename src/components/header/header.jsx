@@ -5,21 +5,26 @@ import Flex from '../flex/flex';
 
 const HeaderStyle = styled.div`
   width: 100%;
-  background-color: #000000;
-  border: 2px solid lightgreen;
+  background-color: ${props => props.color || props.theme.colors.secondary};
   box-sizing : border-box;
   padding-top: 20px;
   padding-bottom: 20px;
+
+  @media ${props => props.theme.media.phone} {
+    img {
+      width: 100px;
+    }
+  }
 `;
 
 function Header() {
   return (
     <HeaderStyle>
       <Container>
-        <img className="header__img" src="img/logoMain.svg" width={100} height={31} alt="Логотип" />
-        {/* <Flex> */}
+        <Flex>
+          <img className="header__img" src="img/logoMain.svg" width={200} height={31} alt="Логотип" />
           <Tabs />
-        {/* </Flex> */}
+        </Flex>
       </Container>
     </HeaderStyle>
   );

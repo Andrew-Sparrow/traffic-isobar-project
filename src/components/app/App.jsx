@@ -1,6 +1,5 @@
-import {Fragment} from 'react';
 import Main from '../main/main';
-import {createGlobalStyle} from 'styled-components';
+import {createGlobalStyle, ThemeProvider} from 'styled-components';
 import {Routes, Route, HashRouter as BrowserRouter} from 'react-router-dom';
 import browserHistory from '../../browser-history';
 import {AppRoute} from '../../const';
@@ -11,10 +10,22 @@ const GlobalStyle = createGlobalStyle`
   * {
     font-family: Roboto;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     color: #ffffff;
   }
 `;
+
+const theme = {
+  colors: {
+    primary: '#111111',
+    secondary: '#000000'
+  },
+  media: {
+    phone: "(max-width: 320px)",
+    tablet: "(min-width: 321px) and (max-width: 768px)",
+    desktop: "(min-width: 769px)"
+  }
+};
 
 function App() {
   // const isDataLoaded = useSelector(getIsDataLoaded);
@@ -26,7 +37,7 @@ function App() {
   // }
 
   return (
-    <Fragment>
+    <ThemeProvider theme={theme}>
       <GlobalStyle />
       <BrowserRouter history={browserHistory}>
         <Routes>
@@ -34,7 +45,7 @@ function App() {
           <Route element={<Error />} />
         </Routes>
       </BrowserRouter>
-    </Fragment>
+    </ThemeProvider>
   );
 }
 

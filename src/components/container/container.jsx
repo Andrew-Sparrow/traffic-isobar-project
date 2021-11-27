@@ -4,6 +4,15 @@ const ContainerStyle = styled.div`
   width: 290px;
   margin-left: auto;
   margin-right: auto;
+
+  @media ${props => props.theme.media.tablet} {
+    max-width: 728px;
+    min-width: 281px;
+  }
+
+  @media ${props => props.theme.media.desktop} {
+    width: 1180px;
+  }
 `;
 
 function Container({children}) {
