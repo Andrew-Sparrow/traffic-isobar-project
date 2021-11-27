@@ -1,8 +1,9 @@
 import styled from 'styled-components';
+import withLayout from '../hocs/with-layout';
 
 const MainStyle = styled.div`
   min-height: 100vh;
-  background: #111111;
+  background: darkgrey;
 `;
 
 function Main() {
@@ -13,4 +14,5 @@ function Main() {
   );
 }
 
-export default Main;
+const withLayoutMain = withLayout(Main);
+export default withLayoutMain;

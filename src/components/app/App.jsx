@@ -1,6 +1,6 @@
 import {Fragment} from 'react';
 import Main from '../main/main';
-import styled, {createGlobalStyle} from 'styled-components';
+import {createGlobalStyle} from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -15,7 +15,7 @@ function App() {
   return (
     <Fragment>
       <GlobalStyle/>
-        <Main />
+      <Main />
     </Fragment>
   );
 }
