@@ -1,4 +1,3 @@
-import { Fragment } from 'react';
 import Layout from '../layout/layout';
 
 function withLayout(Component, className) {

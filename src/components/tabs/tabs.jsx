@@ -11,11 +11,6 @@ const TabsStyle = styled.ul`
   justify-content: space-between;
 `;
 
-const activeStyle = {
-  textDecoration: "underline",
-  color: "red",
-};
-
 const NavLinkStyle = {
   fontSize: "20px",
   lineHeight: "23px",
