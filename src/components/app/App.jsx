@@ -1,6 +1,11 @@
 import {Fragment} from 'react';
 import Main from '../main/main';
 import {createGlobalStyle} from 'styled-components';
+import {Routes, Route, HashRouter as BrowserRouter} from 'react-router-dom';
+import browserHistory from '../../browser-history';
+import {AppRoute} from '../../const';
+import Error from '../not-found/not-found';
+
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -12,10 +17,23 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 function App() {
+  // const isDataLoaded = useSelector(getIsDataLoaded);
+
+  // if (!isDataLoaded) {
+  //   return (
+  //     <LoadingScreen />
+  //   );
+  // }
+
   return (
     <Fragment>
-      <GlobalStyle/>
-      <Main />
+      <GlobalStyle />
+      <BrowserRouter history={browserHistory}>
+        <Routes>
+          <Route path={AppRoute.MAIN} element={<Main />} />
+          <Route element={<Error />} />
+        </Routes>
+      </BrowserRouter>
     </Fragment>
   );
 }

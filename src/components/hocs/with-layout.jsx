@@ -1,10 +1,11 @@
+import { Fragment } from 'react';
 import Layout from '../layout/layout';
 
 function withLayout(Component, className) {
    return function wrapper (props) {
     return (
       <Layout className={className}>
-        <Component {...props} />
+        <Component  />
       </Layout>
     );
   };
