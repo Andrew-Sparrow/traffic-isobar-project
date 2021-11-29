@@ -4,6 +4,9 @@ const ContainerStyle = styled.div`
   width: 290px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
 
   @media ${props => props.theme.media.tablet} {
     max-width: 728px;

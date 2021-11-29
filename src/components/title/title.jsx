@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const TitleStyle = styled.div`
   position: relative;
-  width: 265px;
+  width: 100%;
   font-weight: 700;
   font-size: 35px;
   line-height: 70px;
@@ -15,6 +15,7 @@ const TitleStyle = styled.div`
 
   @media ${props => props.theme.media.tablet } {
     font-size: 40px;
+    width: 300px;
 
     &:before,
     &:after {

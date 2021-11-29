@@ -3,7 +3,8 @@ import Topic from '../topic/topic';
 import Button from '../button/button';
 
 const SideBoxStyle = styled.div`
-
+  padding-top: 30px;
+  width: 
 `;
 
 function SideBox(props) {
