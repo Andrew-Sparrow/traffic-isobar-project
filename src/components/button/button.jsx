@@ -1,19 +1,14 @@
-import styled, {css} from 'styled-components';
+import styled from 'styled-components';
 
 const ButtonStyle = styled.button`
-  width: 210px;
+  width: ${props => props.width || '210px'};
   border: none;
   padding: 10px 15px;
+  box-sizing: border-box;
   font-size: 17px;
   cursor: pointer;
-  &:focus {
-    outline: none;
-  };
-
-  ${props => props.primary && css`
-    color: ${props => props.color || '#fff'};
-    background-color: ${props => props.background || '#F44A1E'};
-  `};
+  color: #fff;
+  background-color: #F44A1E;
 `;
 
 function Button(props) {

@@ -4,7 +4,12 @@ import Button from '../button/button';
 
 const SideBoxStyle = styled.div`
   padding-top: 30px;
-  width: 
+  width: 100%;
+  text-align: justify;
+
+  @media ${props => props.theme.media.desktop } {
+    text-align: left;
+  }
 `;
 
 function SideBox(props) {
@@ -12,7 +17,7 @@ function SideBox(props) {
     <SideBoxStyle {...props}>
       <Topic text='печёрских андрей'/>
       {props.children}
-      <Button/>
+      <Button title="Смотреть работу"/>
     </SideBoxStyle>
   );
 }
