@@ -13,38 +13,25 @@ const TitleStyle = styled.div`
   margin-left: auto;
   margin-right: auto;
 
-  &:before,
-  &:after {
-    width: 100px;
-    content: '';
-    position: absolute;
-    top: 28px;
-    border: 2px solid #F44A1E;
-    transform: rotate(-180deg);
-  }
-
-  &:before {
-    left: -190px;
-  }
-
-  &:after {
-    right: -190px;
-  }
-
   @media ${props => props.theme.media.tablet } {
     font-size: 40px;
-      &:before,
-      &:after {
-        width: 100px;
-        top: 32px;
+
+    &:before,
+    &:after {
+      width: 40px;
+      content: '';
+      position: absolute;
+      top: 28px;
+      border: 2px solid #F44A1E;
+      transform: rotate(-180deg);
     }
 
     &:before {
-      left: -100px;
+      left: -30px;
     }
 
     &:after {
-      right: -100px;
+      right: -30px;
     }
   }
 
