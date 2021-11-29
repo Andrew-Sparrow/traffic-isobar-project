@@ -3,6 +3,7 @@ import withLayout from '../hocs/with-layout';
 import Title from '../title/title';
 import {PageTitle} from '../../const';
 import Container from '../container/container';
+import Receptacle from '../receptacle/receptacle';
 
 
 const MainStyle = styled.div`
@@ -11,11 +12,14 @@ const MainStyle = styled.div`
   padding-top: 100px;
 `;
 
+
+
 function Main() {
   return (
     <MainStyle>
       <Container>
         <Title title={PageTitle.MAIN} />
+        <Receptacle />
       </Container>
     </MainStyle>
   );
