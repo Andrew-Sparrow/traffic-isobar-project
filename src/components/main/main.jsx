@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import withLayout from '../hocs/with-layout';
 import Title from '../title/title';
 import {PageTitle} from '../../const';
+import Container from '../container/container';
+
 
 const MainStyle = styled.div`
   min-height: 100vh;
@@ -12,7 +14,9 @@ const MainStyle = styled.div`
 function Main() {
   return (
     <MainStyle>
-      <Title title={PageTitle.MAIN}/>
+      <Container>
+        <Title title={PageTitle.MAIN} />
+      </Container>
     </MainStyle>
   );
 }
