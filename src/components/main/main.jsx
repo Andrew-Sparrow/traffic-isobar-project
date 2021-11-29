@@ -6,6 +6,7 @@ import {PageTitle} from '../../const';
 const MainStyle = styled.div`
   min-height: 100vh;
   background: #2b2a2a;
+  padding-top: 100px;
 `;
 
 function Main() {
