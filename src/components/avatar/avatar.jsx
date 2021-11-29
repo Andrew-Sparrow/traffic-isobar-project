@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 const AvatarStyle = styled.div`
-  flex-direction: ${ props => props.direction || 'row' };
+  width: 400px;
+  border-radius: 50%;
 `;
 
 function Avatar(props) {
