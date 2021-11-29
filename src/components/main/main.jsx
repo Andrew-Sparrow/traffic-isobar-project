@@ -1,15 +1,17 @@
 import styled from 'styled-components';
 import withLayout from '../hocs/with-layout';
+import Title from '../title/title';
+import {PageTitle} from '../../const';
 
 const MainStyle = styled.div`
   min-height: 100vh;
-  background: darkgrey;
+  background: #2b2a2a;
 `;
 
 function Main() {
   return (
     <MainStyle>
-      app
+      <Title title={PageTitle.MAIN}/>
     </MainStyle>
   );
 }

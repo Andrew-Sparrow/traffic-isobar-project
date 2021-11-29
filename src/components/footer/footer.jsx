@@ -1,13 +1,18 @@
 import styled from 'styled-components';
+import Container from '../container/container';
+
 
 const FooterStyle = styled.div`
-  width: 290px;
+  background-color: ${props => props.color || props.theme.colors.secondary};
+  min-height: 80px;
 `;
 
-function Footer({children}) {
+function Footer() {
   return (
     <FooterStyle>
-      {children}
+      <Container>
+        Copyright © 2021
+      </Container>
     </FooterStyle>
   );
 }
