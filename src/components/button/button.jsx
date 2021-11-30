@@ -1,7 +1,10 @@
 import styled from 'styled-components';
 
-const ButtonStyle = styled.button`
-  width: ${props => props.width || '210px'};
+const ButtonStyle = styled.a`
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  width: ${props => props.width || '100%'};
   border: none;
   padding: 10px 15px;
   box-sizing: border-box;
@@ -9,11 +12,15 @@ const ButtonStyle = styled.button`
   cursor: pointer;
   color: #fff;
   background-color: #F44A1E;
+
+  &:hover {
+    background-color: #d62c00;
+  }
 `;
 
 function Button(props) {
   return (
-    <ButtonStyle {...props} >
+    <ButtonStyle {...props} href="https://andrew-sparrow.github.io/ap-portfolio">
       {props.title}
     </ButtonStyle >
   );
