@@ -1,18 +1,17 @@
 import styled from 'styled-components';
 
-const TopicStyle = styled.div`
-font-weight: 700;
-line-height: 47px;
-text-align: left;
-
+const AboutStyle = styled.p`
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
 `;
 
-function Topic(props) {
+function About() {
   return (
-    <TopicStyle {...props}>
-      {props.text}
-    </TopicStyle>
+    <AboutStyle >
+      At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+    </AboutStyle>
   );
 }
 
-export default Topic;
+export default About;

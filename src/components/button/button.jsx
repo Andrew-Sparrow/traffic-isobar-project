@@ -20,7 +20,7 @@ const ButtonStyle = styled.a`
 
 function Button(props) {
   return (
-    <ButtonStyle {...props} href="https://andrew-sparrow.github.io/ap-portfolio">
+    <ButtonStyle {...props} href="https://andrew-sparrow.github.io/ap-portfolio" target="_blank">
       {props.title}
     </ButtonStyle >
   );
