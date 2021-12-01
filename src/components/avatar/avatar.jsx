@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const AvatarStyle = styled.div`
-  width: 300px;
+  max-width: 300px;
 
   .avatar__image{
     border-radius: 50%;

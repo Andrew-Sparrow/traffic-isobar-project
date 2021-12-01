@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const ContainerStyle = styled.div`
-  width: 290px;
+  max-width: 280px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
@@ -9,12 +9,12 @@ const ContainerStyle = styled.div`
   box-sizing: border-box;
 
   @media ${props => props.theme.media.tablet} {
-    min-width: 281px;
-    max-width: 728px;
+    max-width: 748px;
   }
 
   @media ${props => props.theme.media.desktop} {
-    width: 1180px;
+    min-width: 749px;
+    max-width: 1180px;
   }
 `;
 

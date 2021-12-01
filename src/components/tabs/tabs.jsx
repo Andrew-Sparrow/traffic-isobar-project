@@ -10,22 +10,24 @@ const TabsStyle = styled.ul`
   box-sizing: border-box;
   justify-content: space-between;
   z-index: 10;
-
-  @media ${props => props.theme.media.phone} {
-    position: fixed;
-    flex-direction: column;
-    background-color: #353434;
-    top: 0;
-    right: 0;
-    margin: 0;
-    padding-top: 60px;
-    padding-left: 20px;
-    transform: ${({isOpen}) => isOpen ? 'translateX(0)' : 'translateX(100%)'};
-    transition: transform 0.3s ease-in-out;
-  }
+  position: fixed;
+  flex-direction: column;
+  background-color: #353434;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding-top: 60px;
+  padding-left: 20px;
+  transform: ${ ({isOpen}) => isOpen ? 'translateX(0)' : 'translateX(100%)'};
+  transition: transform 0.3s ease-in-out;
 
   @media ${props => props.theme.media.desktop} {
+    position: initial;
     flex-direction: row;
+    padding-top: 0;
+    background-color: transparent;
+    padding-left: 0;
+    transform: initial;
   }
 `;
 

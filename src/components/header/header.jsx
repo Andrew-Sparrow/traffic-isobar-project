@@ -15,13 +15,17 @@ const HeaderStyle = styled.div`
       width: 100px;
     }
   }
+
+ @media ${props => props.theme.media.desktop} {
+    flex-direction: row;
+  }
 `;
 
 function Header() {
   return (
-    <HeaderStyle>
+    <HeaderStyle >
       <Container>
-        <Flex>
+        <Flex justify='space-between'>
           <img className="header__img" src="img/logoMain.svg" width={200} height={31} alt="Логотип" />
           <Burger/>
         </Flex>

@@ -9,7 +9,7 @@ const TopicStyle = styled.div`
   text-transform: capitalize;
   text-align: center;
 
-    @media ${props => props.theme.media.tablet } {
+  @media ${props => props.theme.media.tablet } {
       text-align: left;
   }
 `;

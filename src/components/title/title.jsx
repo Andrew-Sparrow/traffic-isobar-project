@@ -15,17 +15,7 @@ const TitleStyle = styled.div`
 
   @media ${props => props.theme.media.tablet } {
     font-size: 40px;
-    width: 300px;
-
-    &:before,
-    &:after {
-      width: 40px;
-      content: '';
-      position: absolute;
-      top: 28px;
-      border: 2px solid #F44A1E;
-      transform: rotate(-180deg);
-    }
+    max-width: 300px;
 
     &:before {
       left: -30px;
@@ -42,6 +32,11 @@ const TitleStyle = styled.div`
     &:before,
     &:after {
       width: 156px;
+      content: '';
+      position: absolute;
+      top: 28px;
+      border: 2px solid #F44A1E;
+      transform: rotate(-180deg);
     }
 
     &:before {
