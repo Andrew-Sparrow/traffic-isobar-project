@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import Container from '../container/container';
-import Tabs from '../tabs/tabs';
 import Flex from '../flex/flex';
+import Burger from '../burger/burger';
 
 const HeaderStyle = styled.div`
   width: 100%;
@@ -23,7 +23,7 @@ function Header() {
       <Container>
         <Flex>
           <img className="header__img" src="img/logoMain.svg" width={200} height={31} alt="Логотип" />
-          <Tabs />
+          <Burger/>
         </Flex>
       </Container>
     </HeaderStyle>

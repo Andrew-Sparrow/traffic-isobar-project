@@ -5,7 +5,6 @@ import Button from '../button/button';
 const SideBoxStyle = styled.div`
   padding-top: 30px;
   width: 100%;
-  text-align: justify;
 
   @media ${props => props.theme.media.desktop } {
     text-align: left;

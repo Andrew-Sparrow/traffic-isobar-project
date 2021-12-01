@@ -4,10 +4,21 @@ import {NavLink} from 'react-router-dom';
 const TabsLinkStyle = styled.li`
   font-size: 20px;
   line-height: 23px;
+  padding: 18px 10px;
+
+  &:hover {
+    color: #F44A1E;
+  }
 `;
 
+const navLinkStyle = {
+  fontSize: "20px",
+  lineHeight: "23px",
+  textDecoration: "none"
+};
+
 function TabsLink(props) {
-  const {tabName, handleTabClick, navLinkStyle} = props;
+  const {tabName, handleTabClick} = props;
 
   return (
     <TabsLinkStyle>
