@@ -22,8 +22,8 @@ const theme = {
   },
   media: {
     phone: "(max-width: 320px)",
-    // tablet: "(min-width: 321px) and (max-width: 768px)",
-    tablet: "(max-width: 768px)",
+    tablet: "(min-width: 321px)",
+    // tablet: "(max-width: 768px)",
     desktop: "(min-width: 769px)"
   }
 };

@@ -9,7 +9,7 @@ const ContainerStyle = styled.div`
   box-sizing: border-box;
 
   @media ${props => props.theme.media.tablet} {
-    max-width: 748px;
+    max-width: 768px;
   }
 
   @media ${props => props.theme.media.desktop} {
