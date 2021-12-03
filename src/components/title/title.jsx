@@ -12,6 +12,8 @@ const TitleStyle = styled.div`
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
 
   @media ${props => props.theme.media.tablet } {
     font-size: 40px;
