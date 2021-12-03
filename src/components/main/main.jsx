@@ -10,10 +10,11 @@ const MainStyle = styled.div`
   min-height: 100vh;
   background: #2b2a2a;
   padding-top: 100px;
+  padding-bottom: 100px;
   box-sizing: border-box;
 
   @media ${props => props.theme.media.phone} {
-    width: 320px;
+    width: 100%;
   }
 `;
 

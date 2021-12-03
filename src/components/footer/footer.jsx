@@ -8,7 +8,7 @@ const FooterStyle = styled.div`
   line-height: 80px;
 
   @media ${props => props.theme.media.phone} {
-    width: 320px;
+    width: 100%;
   }
 `;
 
