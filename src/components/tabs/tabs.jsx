@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import {tabNames} from '../../const';
 import TabsLink from '../tabs-link/tabs-link';
 
-const TabsStyle = styled.ul`
+const TabsStyle = styled.menu`
   display: flex;
   width: 180px;
   list-style: none;

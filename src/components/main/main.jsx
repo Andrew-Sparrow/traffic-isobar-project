@@ -6,7 +6,7 @@ import Container from '../container/container';
 import Receptacle from '../receptacle/receptacle';
 
 
-const MainStyle = styled.div`
+const MainStyle = styled.main`
   min-height: 100vh;
   background: #2b2a2a;
   padding-top: 100px;

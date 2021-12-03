@@ -3,7 +3,7 @@ import Container from '../container/container';
 import Flex from '../flex/flex';
 import Burger from '../burger/burger';
 
-const HeaderStyle = styled.div`
+const HeaderStyle = styled.header`
   width: 100%;
   position: fixed;
   background-color: ${props => props.color || props.theme.colors.secondary};
@@ -11,6 +11,10 @@ const HeaderStyle = styled.div`
   padding-top: 20px;
   padding-bottom: 20px;
   z-index: 15;
+
+  .header__img {
+    align-self: center;
+  }
 
   @media ${props => props.theme.media.phone} {
     // width: 300px;

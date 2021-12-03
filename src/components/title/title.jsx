@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 
-const TitleStyle = styled.div`
+const TitleStyle = styled.h1`
   position: relative;
   width: 100%;
   font-weight: 700;

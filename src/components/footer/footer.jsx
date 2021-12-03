@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import Container from '../container/container';
 
 
-const FooterStyle = styled.div`
+const FooterStyle = styled.footer`
   background-color: ${props => props.color || props.theme.colors.secondary};
   min-height: 80px;
   line-height: 80px;
