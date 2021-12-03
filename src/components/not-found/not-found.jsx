@@ -1,4 +1,3 @@
-import React from 'react';
 import withLayout from '../hocs/with-layout';
 
 function NotFound() {

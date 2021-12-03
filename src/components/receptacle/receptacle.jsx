@@ -1,22 +1,35 @@
 import styled from 'styled-components';
 import Avatar from '../avatar/avatar';
-import Flex from '../flex/flex';
 import SideBox from '../sidebox/sidebox';
 import About from '../about/about';
 
 const ReceptacleStyle = styled.div`
   width: 100%;
+  display: flex;
+  align-items: 'stretch';
+  justify-content:'stretch';
+  margin: 0;
+
+  @media ${props => props.theme.media.phone} {
+    flex-direction: column-reverse;
+  }
+
+  @media ${props => props.theme.media.tablet} {
+    flex-direction: column-reverse;
+  }
+
+  @media ${props => props.theme.media.desktop} {
+    flex-direction: row;
+  }
 `;
 
-function Receptacle(props) {
+function Receptacle() {
   return (
     <ReceptacleStyle>
-      <Flex direction="column-reverse">
-        <SideBox>
-          <About />
-        </SideBox>
-        <Avatar />
-      </Flex>
+      <SideBox>
+        <About />
+      </SideBox>
+      <Avatar />
     </ReceptacleStyle>
   );
 }
