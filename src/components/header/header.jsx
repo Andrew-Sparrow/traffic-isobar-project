@@ -11,6 +11,8 @@ const HeaderStyle = styled.div`
   padding-bottom: 20px;
 
   @media ${props => props.theme.media.phone} {
+    width: 320px;
+
     img {
       width: 100px;
     }

@@ -6,6 +6,10 @@ const FooterStyle = styled.div`
   background-color: ${props => props.color || props.theme.colors.secondary};
   min-height: 80px;
   line-height: 80px;
+
+  @media ${props => props.theme.media.phone} {
+    width: 320px;
+  }
 `;
 
 function Footer() {
