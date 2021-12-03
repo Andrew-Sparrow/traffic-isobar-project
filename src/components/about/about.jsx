@@ -4,7 +4,6 @@ const AboutStyle = styled.pre`
   margin: 0;
   padding-top: 40px;
   padding-bottom: 40px;
-  text-align: left;
   white-space: pre-line;
 
   @media ${props => props.theme.media.phone} {
@@ -13,6 +12,11 @@ const AboutStyle = styled.pre`
 
   @media ${props => props.theme.media.tablet} {
     text-align: justify;
+  }
+
+  @media ${props => props.theme.media.tablet} {
+    width: 572px;
+    text-align: left;
   }
 `;
 
