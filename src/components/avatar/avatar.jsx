@@ -19,7 +19,10 @@ const AvatarStyle = styled.div`
 
     @media ${props => props.theme.media.desktop} {
         width: 400px;
-        height: 253px;
+        max-width: 400px;
+        height: 400px;
+        margin-left: 0;
+        margin-right: 0;
       }
   }
 `;

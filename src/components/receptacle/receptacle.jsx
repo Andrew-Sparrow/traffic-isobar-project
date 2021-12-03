@@ -3,7 +3,7 @@ import Avatar from '../avatar/avatar';
 import SideBox from '../sidebox/sidebox';
 import About from '../about/about';
 
-const ReceptacleStyle = styled.div`
+const ReceptacleStyle = styled.section`
   width: 100%;
   display: flex;
   align-items: 'stretch';
@@ -20,6 +20,7 @@ const ReceptacleStyle = styled.div`
 
   @media ${props => props.theme.media.desktop} {
     flex-direction: row;
+    justify-content: space-between;
   }
 `;
 
