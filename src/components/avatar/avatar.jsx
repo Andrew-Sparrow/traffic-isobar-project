@@ -8,7 +8,6 @@ const AvatarStyle = styled.div`
     height: 213px;
     margin-left: auto;
     margin-right: auto;
-    
 
     border-radius: 50%;
     object-fit: cover;

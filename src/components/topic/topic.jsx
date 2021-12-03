@@ -8,10 +8,6 @@ const TopicStyle = styled.div`
   font-size: 40px;
   text-transform: capitalize;
   text-align: center;
-
-  @media ${props => props.theme.media.tablet } {
-      text-align: left;
-  }
 `;
 
 function Topic(props) {
