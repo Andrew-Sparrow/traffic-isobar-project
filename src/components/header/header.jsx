@@ -5,10 +5,12 @@ import Burger from '../burger/burger';
 
 const HeaderStyle = styled.div`
   width: 100%;
+  position: fixed;
   background-color: ${props => props.color || props.theme.colors.secondary};
   box-sizing : border-box;
   padding-top: 20px;
   padding-bottom: 20px;
+  z-index: 15;
 
   @media ${props => props.theme.media.phone} {
     // width: 300px;
