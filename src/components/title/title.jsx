@@ -36,7 +36,7 @@ const TitleStyle = styled.div`
       width: 156px;
       content: '';
       position: absolute;
-      top: 28px;
+      top: 80px;
       border: 2px solid #F44A1E;
       transform: rotate(-180deg);
     }
