@@ -18,7 +18,7 @@ const MainStyle = styled.main`
   }
 
   @media ${props => props.theme.media.desktop} {
-    min-width: 900px;
+    min-width: 1000px;
   }
 `;
 
