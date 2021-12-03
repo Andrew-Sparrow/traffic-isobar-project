@@ -16,6 +16,10 @@ const MainStyle = styled.div`
   @media ${props => props.theme.media.phone} {
     width: 100%;
   }
+
+  @media ${props => props.theme.media.desktop} {
+    min-width: 900px;
+  }
 `;
 
 function Main() {
