@@ -16,6 +16,10 @@ const ButtonStyle = styled.a`
   &:hover {
     background-color: #d62c00;
   }
+
+  @media ${props => props.theme.media.desktop} {
+    width: 210px;
+  }
 `;
 
 function Button(props) {

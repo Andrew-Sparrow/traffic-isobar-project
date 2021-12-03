@@ -17,7 +17,7 @@ const ContainerStyle = styled.div`
 
   @media ${props => props.theme.media.desktop} {
     min-width: 749px;
-    max-width: 1180px;
+    max-width: 1220px;
   }
 `;
 

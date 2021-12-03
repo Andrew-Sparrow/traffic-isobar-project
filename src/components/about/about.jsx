@@ -14,7 +14,7 @@ const AboutStyle = styled.pre`
     text-align: justify;
   }
 
-  @media ${props => props.theme.media.tablet} {
+  @media ${props => props.theme.media.desktop} {
     width: 572px;
     text-align: left;
   }
