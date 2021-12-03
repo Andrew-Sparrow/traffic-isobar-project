@@ -9,7 +9,7 @@ const BurgerStyle = styled.div`
   width: 50px;
   height: 50px;
   position: fixed;
-  top: 15px;
+  top: 11px;
   right: 20px;
   z-index: 20;
 
