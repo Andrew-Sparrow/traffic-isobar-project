@@ -1,4 +1,5 @@
 import Main from '../main/main';
+import Example from '../example/example';
 import {createGlobalStyle, ThemeProvider} from 'styled-components';
 import {Routes, Route, HashRouter as BrowserRouter} from 'react-router-dom';
 import browserHistory from '../../browser-history';
@@ -23,7 +24,6 @@ const theme = {
   media: {
     phone: "(max-width: 320px)",
     tablet: "(min-width: 321px)",
-    // tablet: "(max-width: 768px)",
     desktop: "(min-width: 769px)"
   }
 };
@@ -43,6 +43,7 @@ function App() {
       <BrowserRouter history={browserHistory}>
         <Routes>
           <Route path={AppRoute.MAIN} element={<Main />} />
+          <Route path={AppRoute.EXAMPLE} element={<Example />} />
           <Route element={<Error />} />
         </Routes>
       </BrowserRouter>

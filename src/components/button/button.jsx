@@ -12,6 +12,7 @@ const ButtonStyle = styled.a`
   cursor: pointer;
   color: #fff;
   background-color: #F44A1E;
+  text-transform: uppercase;
 
   &:hover {
     background-color: #d62c00;

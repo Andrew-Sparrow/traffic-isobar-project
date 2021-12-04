@@ -8,7 +8,7 @@ import Receptacle from '../receptacle/receptacle';
 
 const MainStyle = styled.main`
   min-height: 100vh;
-  background: #2b2a2a;
+  background: #111111;
   padding-top: 100px;
   padding-bottom: 100px;
   box-sizing: border-box;
@@ -27,7 +27,7 @@ function Main() {
     <MainStyle>
       <Container>
         <Title title={PageTitle.MAIN} />
-        <Receptacle />
+        <Receptacle topic='Печёрских Андрей' title="Смотреть работу"/>
       </Container>
     </MainStyle>
   );

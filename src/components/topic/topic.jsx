@@ -5,7 +5,6 @@ const TopicStyle = styled.h2`
   line-height: 47px;
   font-family: Roboto;
   font-size: 40px;
-  text-transform: capitalize;
   text-align: center;
   margin: 0;
 
