@@ -3,7 +3,7 @@ import Example from '../example/example';
 import {createGlobalStyle, ThemeProvider} from 'styled-components';
 import {Routes, Route, BrowserRouter} from 'react-router-dom';
 import {AppRoute} from '../../const';
-import Error from '../not-found/not-found';
+import Error from '../error/error';
 
 
 const GlobalStyle = createGlobalStyle`
@@ -43,7 +43,7 @@ function App() {
         <Routes>
           <Route path={AppRoute.MAIN} element={<Main />} />
           <Route path={AppRoute.EXAMPLE} element={<Example />} />
-          <Route element={<Error />} />
+          <Route path="*" element={<Error />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
