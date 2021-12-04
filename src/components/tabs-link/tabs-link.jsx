@@ -18,12 +18,12 @@ const navLinkStyle = {
 };
 
 function TabsLink(props) {
-  const {tabName, handleTabClick} = props;
+  const {tabName, handleTabClick, to} = props;
 
   return (
     <TabsLinkStyle>
       <NavLink
-        to="#"
+        to={to}
         data-group={tabName}
         onClick={handleTabClick}
         style={navLinkStyle}

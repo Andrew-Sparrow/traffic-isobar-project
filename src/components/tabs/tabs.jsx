@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {tabNames} from '../../const';
+import {tabNames, AppRoute} from '../../const';
 import TabsLink from '../tabs-link/tabs-link';
 
 const TabsStyle = styled.menu`
@@ -18,10 +18,10 @@ const TabsStyle = styled.menu`
   margin: 0;
   padding-top: 60px;
   padding-left: 20px;
-  transform: ${ ({isOpen}) => isOpen ? 'translateX(0)' : 'translateX(100%)'};
+  transform: ${ ({isOpen}) => isOpen ? 'translateX(0)' : 'translateX(100%)' };
   transition: transform 0.3s ease-in-out;
 
-  @media ${props => props.theme.media.desktop} {
+  @media ${ props => props.theme.media.desktop } {
     position: initial;
     flex-direction: row;
     padding-top: 0;
@@ -38,17 +38,22 @@ function handleTabClick() {
 function Tabs({isOpen}) {
   return (
     <TabsStyle isOpen={isOpen}>
-      {Object.values(tabNames).map((tabName) => (
-        <TabsLink
-          to="#"
-          key={tabName}
-          tabName={tabName}
-          handleTabClick={handleTabClick}
-          end
-        >
-          {tabName}
-        </TabsLink>
-      ))}
+      <TabsLink
+        to={AppRoute.MAIN}
+        tabName={tabNames.MAIN}
+        // handleTabClick={handleTabClick}
+        end
+      >
+        {tabNames.MAIN}
+      </TabsLink>
+      <TabsLink
+        to={AppRoute.EXAMPLE}
+        tabName={tabNames.EXAMPLE}
+        // handleTabClick={handleTabClick}
+        end
+      >
+        {tabNames.EXAMPLE}
+      </TabsLink>
     </TabsStyle>
   );
 }

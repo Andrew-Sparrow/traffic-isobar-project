@@ -1,8 +1,7 @@
 import Main from '../main/main';
 import Example from '../example/example';
 import {createGlobalStyle, ThemeProvider} from 'styled-components';
-import {Routes, Route, HashRouter as BrowserRouter} from 'react-router-dom';
-import browserHistory from '../../browser-history';
+import {Routes, Route, BrowserRouter} from 'react-router-dom';
 import {AppRoute} from '../../const';
 import Error from '../not-found/not-found';
 
@@ -40,7 +39,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <BrowserRouter history={browserHistory}>
+      <BrowserRouter>
         <Routes>
           <Route path={AppRoute.MAIN} element={<Main />} />
           <Route path={AppRoute.EXAMPLE} element={<Example />} />
