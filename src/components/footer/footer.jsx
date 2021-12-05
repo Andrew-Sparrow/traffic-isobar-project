@@ -17,7 +17,7 @@ function Footer() {
   return (
     <FooterStyle>
       <Container>
-        Copyright © 2021
+        Copyright © {new Date().getFullYear()}
       </Container>
     </FooterStyle>
   );
