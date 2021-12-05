@@ -1,7 +1,8 @@
+import React from 'react';
 import styled from 'styled-components';
-import SideBox from '../sidebox/sidebox';
-import About from '../about/about';
 import Avatar from '../avatar/avatar';
+import About from '../about/about';
+import SideBox from '../sidebox/sidebox';
 
 const ReceptacleStyle = styled.section`
   width: 100%;
@@ -24,10 +25,10 @@ const ReceptacleStyle = styled.section`
   }
 `;
 
-function Receptacle(props) {
+function Receptacle() {
   return (
     <ReceptacleStyle>
-      <SideBox topic={props.topic} title={props.title}>
+      <SideBox>
         <About />
       </SideBox>
       <Avatar />

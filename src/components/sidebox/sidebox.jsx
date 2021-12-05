@@ -15,9 +15,9 @@ const SideBoxStyle = styled.article`
 function SideBox(props) {
   return (
     <SideBoxStyle {...props}>
-      <Topic text={props.topic}/>
+      <Topic text='Печёрских Андрей'/>
       {props.children}
-      <Button title={props.title}/>
+      <Button title="Смотреть работу" onClickHandler={props.onClickHandler}/>
     </SideBoxStyle>
   );
 }

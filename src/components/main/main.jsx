@@ -5,7 +5,6 @@ import {PageTitle} from '../../const';
 import Container from '../container/container';
 import Receptacle from '../receptacle/receptacle';
 
-
 const MainStyle = styled.main`
   min-height: calc(100vh - 80px);
   background: #111111;
@@ -27,7 +26,7 @@ function Main() {
     <MainStyle>
       <Container>
         <Title title={PageTitle.MAIN} />
-        <Receptacle topic='Печёрских Андрей' title="Смотреть работу"/>
+        <Receptacle/>
       </Container>
     </MainStyle>
   );
