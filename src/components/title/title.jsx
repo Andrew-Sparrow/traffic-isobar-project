@@ -38,6 +38,7 @@ const TitleStyle = styled.h1`
       position: absolute;
       top: 80px;
       border: 2px solid #F44A1E;
+      background-color: #F44A1E;
       transform: rotate(-180deg);
     }
 
