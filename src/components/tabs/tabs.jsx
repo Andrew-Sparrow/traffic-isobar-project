@@ -31,17 +31,12 @@ const TabsStyle = styled.menu`
   }
 `;
 
-function handleTabClick() {
-
-};
-
 function Tabs({isOpen}) {
   return (
     <TabsStyle isOpen={isOpen}>
       <TabsLink
         to={AppRoute.MAIN}
         tabName={tabNames.MAIN}
-        // handleTabClick={handleTabClick}
         end
       >
         {tabNames.MAIN}
@@ -49,7 +44,6 @@ function Tabs({isOpen}) {
       <TabsLink
         to={AppRoute.EXAMPLE}
         tabName={tabNames.EXAMPLE}
-        // handleTabClick={handleTabClick}
         end
       >
         {tabNames.EXAMPLE}
