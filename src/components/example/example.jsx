@@ -3,7 +3,7 @@ import withLayout from '../hocs/with-layout';
 import Title from '../title/title';
 import {PageTitle} from '../../const';
 import Container from '../container/container';
-import SideBox from '../sidebox/sidebox';
+import Section from '../section/section';
 import Picture from '../picture/picture';
 
 const ExampleStyle = styled.main`
@@ -48,13 +48,13 @@ function Example() {
     <ExampleStyle>
       <Container>
         <Title title={PageTitle.EXAMPLE} />
-        <SideBox
+        <Section
           topic="Картинка с котом"
           title="Загрузить другую"
           onClickHandler={loadNextImage}
         >
           <Picture />
-        </SideBox>
+        </Section>
       </Container>
     </ExampleStyle>
   );

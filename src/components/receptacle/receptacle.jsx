@@ -1,8 +1,7 @@
-import React from 'react';
 import styled from 'styled-components';
 import Avatar from '../avatar/avatar';
 import About from '../about/about';
-import SideBox from '../sidebox/sidebox';
+import {SideBox} from '../sidebox/sidebox';
 
 const ReceptacleStyle = styled.section`
   width: 100%;

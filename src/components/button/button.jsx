@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const ButtonStyle = styled.a`
+export const ButtonStyle = styled.a`
   display: block;
   text-align: center;
   text-decoration: none;
@@ -23,12 +23,10 @@ const ButtonStyle = styled.a`
   }
 `;
 
-function Button(props) {
+export function Button(props) {
   return (
-    <ButtonStyle {...props} href="https://andrew-sparrow.github.io/ap-portfolio" target="_blank" onClick={props.onClickHandler}>
+    <ButtonStyle {...props} href="https://andrew-sparrow.github.io/ap-portfolio" target="_blank">
       {props.title}
     </ButtonStyle >
   );
 }
-
-export default Button;

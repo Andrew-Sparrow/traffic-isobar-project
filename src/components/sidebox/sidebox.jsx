@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import Topic from '../topic/topic';
-import Button from '../button/button';
+import {Button} from '../button/button';
 
-const SideBoxStyle = styled.article`
+export const SideBoxStyle = styled.article`
   padding-top: 30px;
   width: 100%;
 
@@ -12,14 +12,12 @@ const SideBoxStyle = styled.article`
   }
 `;
 
-function SideBox(props) {
+export function SideBox(props) {
   return (
     <SideBoxStyle {...props}>
       <Topic text='Печёрских Андрей'/>
       {props.children}
-      <Button title="Смотреть работу" onClickHandler={props.onClickHandler}/>
+      <Button title="Смотреть работу"/>
     </SideBoxStyle>
   );
 }
-
-export default SideBox;
