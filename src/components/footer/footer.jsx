@@ -3,6 +3,7 @@ import Container from '../container/container';
 
 
 const FooterStyle = styled.footer`
+  min-height: 100px;
   background-color: ${props => props.color || props.theme.colors.secondary};
   min-height: 80px;
   line-height: 80px;

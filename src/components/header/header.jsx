@@ -5,6 +5,7 @@ import Burger from '../burger/burger';
 
 const HeaderStyle = styled.header`
   width: 100%;
+  min-height: 100px;
   position: fixed;
   background-color: ${props => props.color || props.theme.colors.secondary};
   box-sizing : border-box;

@@ -7,7 +7,7 @@ import Receptacle from '../receptacle/receptacle';
 
 
 const MainStyle = styled.main`
-  min-height: 100vh;
+  min-height: calc(100vh - 80px);
   background: #111111;
   padding-top: 100px;
   padding-bottom: 100px;

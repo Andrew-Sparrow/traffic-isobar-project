@@ -7,7 +7,7 @@ import SideBox from '../sidebox/sidebox';
 import Picture from '../picture/picture';
 
 const ExampleStyle = styled.main`
-  min-height: 100vh;
+  min-height: calc(100vh - 80px);
   background: #111111;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -28,7 +28,7 @@ function Example() {
       <Container>
         <Title title={PageTitle.EXAMPLE} />
         <SideBox topic="Картинка с котом" title="Загрузить другую">
-          <Picture/>
+          <Picture />
         </SideBox>
       </Container>
     </ExampleStyle>
