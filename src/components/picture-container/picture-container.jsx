@@ -12,6 +12,7 @@ const PictureContainerStyle = styled.div`
     margin-bottom: 44px;
     border: 1px solid #F44A1E;
     box-shadow: 0px 0px 58px rgba(244, 74, 30, 0.25);
+    z-index: 10;
   }
 `;
 
