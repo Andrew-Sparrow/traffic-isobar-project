@@ -18,7 +18,8 @@ const GlobalStyle = createGlobalStyle`
 const theme = {
   colors: {
     primary: '#111111',
-    secondary: '#000000'
+    secondary: '#000000',
+    orange: '#F44A1E'
   },
   media: {
     phone: "(max-width: 320px)",
