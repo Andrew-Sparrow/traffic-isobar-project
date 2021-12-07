@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
 const PictureStyle = styled.img`
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  background-color: #1a2730;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: #1a2730;
   }
 `;
 

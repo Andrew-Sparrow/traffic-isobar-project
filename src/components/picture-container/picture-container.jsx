@@ -17,7 +17,8 @@ const PictureContainerStyle = styled.div`
 
 const override = css`
   display: block;
-  margin-top: 10px;
+  line-height: 258px;
+  text-align: center;
   border-color: red;
 `;
 

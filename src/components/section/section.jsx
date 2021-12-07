@@ -47,7 +47,6 @@ function Section(props) {
   return (
     <SideBoxStyle {...props}>
       <Topic text='Картинка с котом' />
-      {/* <Picture path={imagePath} isLoading={isLoading}/> */}
       <PictureContainer
         imagePath={imagePath}
         isLoading={isLoading}
