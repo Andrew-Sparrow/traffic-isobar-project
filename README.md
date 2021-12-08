@@ -10,6 +10,9 @@ Used Technologies:
 - animation
 - Routers
 - adaptive HTML-markup
+---------------------------
+
+[GitHub Pages](https://andrew-sparrow.github.io/traffic-isobar-project/)
 
 
 ![Alt text](public/img/screenshot.png?raw=true "Title")
