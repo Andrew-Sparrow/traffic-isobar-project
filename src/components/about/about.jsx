@@ -24,7 +24,7 @@ function About() {
   return (
     <AboutStyle >
         Пишу на JavaScript.
-        Использую React, Redux, styled-components.
+        Использую React, TypeScript, Redux, styled-components.
     </AboutStyle>
   );
 }
