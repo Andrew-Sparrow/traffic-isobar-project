@@ -23,8 +23,8 @@ const AboutStyle = styled.pre`
 function About() {
   return (
     <AboutStyle >
-        Пишу на JavaScript.
-        Использую React, TypeScript, Redux, styled-components.
+      Пишу на JavaScript.
+      Использую React, TypeScript, Redux, styled-components.
     </AboutStyle>
   );
 }
