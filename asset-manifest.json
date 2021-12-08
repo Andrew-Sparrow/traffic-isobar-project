@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/traffic-isobar-project/static/js/main.fb71acdc.chunk.js",
-    "main.js.map": "/traffic-isobar-project/static/js/main.fb71acdc.chunk.js.map",
+    "main.js": "/traffic-isobar-project/static/js/main.7149e665.chunk.js",
+    "main.js.map": "/traffic-isobar-project/static/js/main.7149e665.chunk.js.map",
     "runtime-main.js": "/traffic-isobar-project/static/js/runtime-main.0ea69d4d.js",
     "runtime-main.js.map": "/traffic-isobar-project/static/js/runtime-main.0ea69d4d.js.map",
-    "static/js/2.9135ee5d.chunk.js": "/traffic-isobar-project/static/js/2.9135ee5d.chunk.js",
-    "static/js/2.9135ee5d.chunk.js.map": "/traffic-isobar-project/static/js/2.9135ee5d.chunk.js.map",
+    "static/js/2.3385af95.chunk.js": "/traffic-isobar-project/static/js/2.3385af95.chunk.js",
+    "static/js/2.3385af95.chunk.js.map": "/traffic-isobar-project/static/js/2.3385af95.chunk.js.map",
     "index.html": "/traffic-isobar-project/index.html",
-    "static/js/2.9135ee5d.chunk.js.LICENSE.txt": "/traffic-isobar-project/static/js/2.9135ee5d.chunk.js.LICENSE.txt"
+    "static/js/2.3385af95.chunk.js.LICENSE.txt": "/traffic-isobar-project/static/js/2.3385af95.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.0ea69d4d.js",
-    "static/js/2.9135ee5d.chunk.js",
-    "static/js/main.fb71acdc.chunk.js"
+    "static/js/2.3385af95.chunk.js",
+    "static/js/main.7149e665.chunk.js"
   ]
 }
