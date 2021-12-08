@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const PictureStyle = styled.div`
     width: 100%;
     height: 100%;
-    object-fit: fit;
+    object-fit: fill;
     background-color: #1a2730;
     background-image:url("data:image/svg+xml;utf8,
       <svg xmlns='http://www.w3.org/2000/svg' version='1.1'
