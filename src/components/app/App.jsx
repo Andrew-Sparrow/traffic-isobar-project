@@ -1,7 +1,7 @@
 import Main from '../main/main';
 import Example from '../example/example';
 import {createGlobalStyle, ThemeProvider} from 'styled-components';
-import {Routes, Route, BrowserRouter} from 'react-router-dom';
+import {Routes, Route, HashRouter as BrowserRouter} from 'react-router-dom';
 import {AppRoute} from '../../const';
 import Error from '../error/error';
 
