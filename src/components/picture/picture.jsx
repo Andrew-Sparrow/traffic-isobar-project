@@ -3,7 +3,6 @@ import styled from 'styled-components';
 const PictureStyle = styled.div`
     width: 100%;
     height: 100%;
-    object-fit: fill;
     background-color: #1a2730;
     background-image:url("data:image/svg+xml;utf8,
       <svg xmlns='http://www.w3.org/2000/svg' version='1.1'
@@ -12,6 +11,10 @@ const PictureStyle = styled.div`
       </svg>");
     background-repeat: no-repeat;
     background-position: center;
+
+    img {
+      object-fit: contain;
+    }
   }
 `;
 
@@ -20,7 +23,7 @@ function Picture(props) {
 
   return (
     <PictureStyle >
-      <img alt="cat" width="258" height="258" src={imagePath} />
+      <img alt="cat" width="258" height="258" src={imagePath}/>
     </PictureStyle>
   );
 }
