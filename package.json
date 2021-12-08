@@ -1,8 +1,7 @@
 {
   "name": "traffic-isobar-project",
   "version": "0.1.0",
-  "private": true,
-  "homepage": "https://andrew-sparrow.github.io/traffic-isobar-project",
+  "private": false,
   "dependencies": {
     "@emotion/react": "^11.7.0",
     "@testing-library/jest-dom": "^5.15.1",
