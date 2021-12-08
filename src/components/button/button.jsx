@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
+
 
 export const ButtonStyle = styled.a`
   display: block;
@@ -25,8 +27,12 @@ export const ButtonStyle = styled.a`
 
 export function Button(props) {
   return (
-    <ButtonStyle {...props} href="https://andrew-sparrow.github.io/ap-portfolio" target="_blank">
+    <ButtonStyle href="https://andrew-sparrow.github.io/ap-portfolio" target="_blank">
       {props.title}
     </ButtonStyle >
   );
 }
+
+Button.propTypes = {
+  title: PropTypes.string
+};

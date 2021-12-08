@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+
 const AvatarStyle = styled.div`
   .avatar__image{
     display: block;
@@ -27,9 +28,9 @@ const AvatarStyle = styled.div`
   }
 `;
 
-function Avatar(props) {
+function Avatar() {
   return (
-    <AvatarStyle {...props}>
+    <AvatarStyle>
       <img className="avatar__image" src="img/avatar.jpeg" alt="avatar" />
     </AvatarStyle>
   );

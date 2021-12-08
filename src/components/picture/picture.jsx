@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const PictureStyle = styled.div`
     width: 100%;
@@ -27,5 +28,9 @@ function Picture(props) {
     </PictureStyle>
   );
 }
+
+Picture.propTypes = {
+  imagePath: PropTypes.string
+};
 
 export default Picture;

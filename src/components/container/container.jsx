@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
+
 
 const ContainerStyle = styled.div`
   margin-left: auto;
@@ -28,5 +30,12 @@ function Container({children}) {
     </ContainerStyle>
   );
 }
+
+Container.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.object,
+    PropTypes.array
+  ]),
+};
 
 export default Container;

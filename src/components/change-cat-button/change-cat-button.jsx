@@ -1,4 +1,6 @@
 import {ButtonStyle} from "../button/button";
+import PropTypes from 'prop-types';
+
 
 function ChangeCatButton(props) {
   return (
@@ -7,5 +9,9 @@ function ChangeCatButton(props) {
     </ButtonStyle>
   );
 }
+
+ChangeCatButton.propTypes = {
+  onClickHandler: PropTypes.func.isRequired
+};
 
 export default ChangeCatButton;

@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import {tabNames, AppRoute} from '../../const';
 import TabsLink from '../tabs-link/tabs-link';
+import PropTypes from 'prop-types';
+
 
 const TabsStyle = styled.menu`
   display: flex;
@@ -51,5 +53,9 @@ function Tabs({isOpen}) {
     </TabsStyle>
   );
 }
+
+Tabs.propTypes = {
+  isOpen: PropTypes.bool.isRequired
+};
 
 export default Tabs;

@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
+
 
 const TopicStyle = styled.h2`
   font-weight: 700;
@@ -13,12 +15,16 @@ const TopicStyle = styled.h2`
   }
 `;
 
-function Topic(props) {
+function Topic({text}) {
   return (
-    <TopicStyle {...props}>
-      {props.text}
+    <TopicStyle >
+      {text}
     </TopicStyle>
   );
 }
+
+Topic.propTypes = {
+  text: PropTypes.string.isRequired
+};
 
 export default Topic;

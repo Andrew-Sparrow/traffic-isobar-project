@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
+
 
 const FlexStyle = styled.div`
   display: flex;
@@ -13,5 +15,12 @@ function Flex(props) {
     <FlexStyle {...props}/>
   );
 }
+
+Flex.propTypes = {
+  direction: PropTypes.string,
+  align: PropTypes.string,
+  justify: PropTypes.string,
+  margin: PropTypes.string
+};
 
 export default Flex;

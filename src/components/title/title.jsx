@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 
 const TitleStyle = styled.h1`
@@ -15,7 +16,7 @@ const TitleStyle = styled.h1`
   padding-top: 50px;
   padding-bottom: 50px;
 
-  @media ${props => props.theme.media.tablet } {
+  @media ${ props => props.theme.media.tablet } {
     font-size: 40px;
     max-width: 300px;
 
@@ -28,7 +29,7 @@ const TitleStyle = styled.h1`
     }
   }
 
-  @media ${ props => props.theme.media.desktop} {
+  @media ${ props => props.theme.media.desktop } {
     font-size: 60px;
 
     &:before,
@@ -52,12 +53,16 @@ const TitleStyle = styled.h1`
   }
 `;
 
-function Title({...props}) {
+function Title({title}) {
   return (
-    <TitleStyle {...props}>
-      {props.title}
+    <TitleStyle >
+      {title}
     </TitleStyle>
   );
-}
+};
+
+Title.propTypes = {
+  title: PropTypes.string.isRequired,
+};
 
 export default Title;

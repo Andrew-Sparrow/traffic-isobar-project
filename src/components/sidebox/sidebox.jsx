@@ -14,7 +14,7 @@ export const SideBoxStyle = styled.article`
 
 export function SideBox(props) {
   return (
-    <SideBoxStyle {...props}>
+    <SideBoxStyle>
       <Topic text='Печёрских Андрей'/>
       {props.children}
       <Button title="Смотреть работу"/>

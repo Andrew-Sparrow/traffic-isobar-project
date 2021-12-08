@@ -29,14 +29,6 @@ const theme = {
 };
 
 function App() {
-  // const isDataLoaded = useSelector(getIsDataLoaded);
-
-  // if (!isDataLoaded) {
-  //   return (
-  //     <LoadingScreen />
-  //   );
-  // }
-
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import Picture from '../picture/picture';
 import ClipLoader from "react-spinners/PulseLoader";
 import {css} from "@emotion/react";
+import PropTypes from 'prop-types';
 
 const PictureContainerStyle = styled.div`
     width: 258px;
@@ -43,5 +44,10 @@ function PictureContainer(props) {
     </PictureContainerStyle>
   );
 }
+
+Picture.propTypes = {
+  isLoading: PropTypes.bool,
+  imagePath: PropTypes.string.isRequired
+};
 
 export default PictureContainer;

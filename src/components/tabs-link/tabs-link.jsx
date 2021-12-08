@@ -4,6 +4,8 @@ import {
   useMatch,
   useResolvedPath
 } from 'react-router-dom';
+import PropTypes from 'prop-types';
+
 
 const TabsLinkStyle = styled.li`
   font-size: 20px;
@@ -45,5 +47,10 @@ function TabsLink(props) {
     </TabsLinkStyle>
   );
 }
+
+TabsLink.propTypes = {
+  tabName: PropTypes.string.isRequired,
+  to: PropTypes.string.isRequired,
+};
 
 export default TabsLink;
