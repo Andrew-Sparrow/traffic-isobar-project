@@ -47,7 +47,7 @@ function PictureContainer(props) {
 
 Picture.propTypes = {
   isLoading: PropTypes.bool,
-  imagePath: PropTypes.string.isRequired
+  imagePath: PropTypes.string
 };
 
 export default PictureContainer;
