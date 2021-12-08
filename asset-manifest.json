@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/traffic-isobar-project/static/js/main.63d838ac.chunk.js",
-    "main.js.map": "/traffic-isobar-project/static/js/main.63d838ac.chunk.js.map",
+    "main.js": "/traffic-isobar-project/static/js/main.fb71acdc.chunk.js",
+    "main.js.map": "/traffic-isobar-project/static/js/main.fb71acdc.chunk.js.map",
     "runtime-main.js": "/traffic-isobar-project/static/js/runtime-main.0ea69d4d.js",
     "runtime-main.js.map": "/traffic-isobar-project/static/js/runtime-main.0ea69d4d.js.map",
     "static/js/2.9135ee5d.chunk.js": "/traffic-isobar-project/static/js/2.9135ee5d.chunk.js",
@@ -12,6 +12,6 @@
   "entrypoints": [
     "static/js/runtime-main.0ea69d4d.js",
     "static/js/2.9135ee5d.chunk.js",
-    "static/js/main.63d838ac.chunk.js"
+    "static/js/main.fb71acdc.chunk.js"
   ]
 }
