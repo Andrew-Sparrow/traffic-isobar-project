@@ -9,6 +9,7 @@ Used Technologies:
 - PropTypes
 - animation
 - Routers
+- adaptive HTML-markup
 
 
 ![Alt text](public/img/screenshot.png?raw=true "Title")
